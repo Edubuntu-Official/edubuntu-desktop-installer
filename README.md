@@ -1,4 +1,4 @@
-# Ubuntu Studio System Installer
+# Edubuntu Desktop Installer
 
 Created from [Ubuntu Flavor Installer](https://github.com/canonical/ubuntu-flavor-installer)
 starting point for Ubuntu flavors.
