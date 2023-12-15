@@ -23,7 +23,7 @@ apps:
   subiquity-loadkeys:
     command: bin/subiquity/bin/subiquity-loadkeys
 
-  ubuntu-budgie-installer:
+  edubuntu-desktop-installer:
     command: bin/edubuntu-desktop-installer
     command-chain: [bin/launcher]
     desktop: bin/data/flutter_assets/assets/edubuntu-desktop-installer.desktop
