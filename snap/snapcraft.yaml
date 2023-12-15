@@ -150,7 +150,7 @@ parts:
       - zip
     override-prime: ""
 
-  ubuntu-budgie-installer:
+  edubuntu-desktop-installer:
     after: [flutter-git]
     source: .
     source-type: git
