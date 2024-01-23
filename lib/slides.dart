@@ -33,7 +33,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
         child: SizedBox(
           width: 640,
           height: 175,
-          child: Image.asset('assets/slides/edubuntu-new-logo.png),
+          child: Image.asset('assets/slides/edubuntu-new-logo.png'),
         ),
         child: Html(
           shrinkWrap: true,
