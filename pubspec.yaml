@@ -1,5 +1,5 @@
-name: ubuntu_budgie_installer
-description: Ubuntu Budgie Installer
+name: edubuntu_desktop_installer
+description: Edubuntu Desktop Installer
 publish_to: 'none'
 
 environment:
