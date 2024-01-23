@@ -9,10 +9,18 @@ const bodyStyle = TextStyle(color: Colors.white, fontSize: 18);
 
 final installationSlides = [
   _buildWelcomeSlide,
-  _buildAudioSlide,
-  _buildVideoSlide,
-  _buildGraphicsSlide,
-  _buildPhotographySlide,
+  _buildCustomizeSlide,
+  _buildGbrainySlide,
+  _buildKdeeduSlide,
+  _buildTux4kidsSlide,
+  _buildBijibenSlide,
+  _buildFontsSlide,
+  _buildAdminSlide,
+  _buildLibrecadSlide,
+  _buildCalibreSlide,
+  _buildCalcSlide,
+  _buildDesksoftSlide,
+  _buildAccessSlide,
   _buildSoftwareSlide,
   _buildGetHelpSlide,
 ];
@@ -20,36 +28,45 @@ final installationSlides = [
 Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
-      Padding(
-        padding: const EdgeInsets.all(40),
-        child: FractionallySizedBox(
-          widthFactor: 0.5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(context.l10n.welcomeSlideHeader, style: headerStyle),
-              const SizedBox(height: 20),
-              Expanded(
-                child: Text(context.l10n.welcomeSlideBody, style: bodyStyle),
-              ),
-            ],
-          ),
+      Image.asset('assets/slides/ed_background.png'),
+      Center(
+        child: SizedBox(
+          width: 640,
+          height: 175,
+          child: Image.asset('assets/slides/edubuntu-new-logo.png),
+        ),
+        child: Html(
+          shrinkWrap: true,
+          data: context.l10n.welcomeSlideTitle,
+          style: {
+            'body': Style(
+              color: Colors.white,
+              fontSize: FontSize(24),
+            ),
+          },
+        ),
+      ),
+      Left(
+        child: (
+          context.l10n.welcomeSlideBody,
+          style: bodyStyle,
         ),
       ),
     ],
   );
 }
 
-Widget _buildAudioSlide(BuildContext context) {
+Widget _buildCustomizeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
+      Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(context.l10n.customizeSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -58,7 +75,7 @@ Widget _buildAudioSlide(BuildContext context) {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  context.l10n.audioSlideBody,
+                  context.l10n.customizeSlideBody,
                   style: bodyStyle,
                 ),
               ),
@@ -67,9 +84,9 @@ Widget _buildAudioSlide(BuildContext context) {
               child: Align(
                 alignment: FractionalOffset(1, 0.75),
                 child: SizedBox(
-                  width: 450,
-                  height: 410,
-                  child: Image.asset('assets/slides/audio.png'),
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/edubuntu-installer.png'),
                 ),
               ),
             ),
@@ -81,15 +98,17 @@ Widget _buildAudioSlide(BuildContext context) {
 }
 
 
-Widget _buildVideoSlide(BuildContext context) {
+Widget _buildGbranySlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
+      Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(context.l10n.gbrainySlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -98,7 +117,7 @@ Widget _buildVideoSlide(BuildContext context) {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  context.l10n.videoSlideBody,
+                  context.l10n.gbrainySlideBody,
                   style: bodyStyle,
                 ),
               ),
@@ -107,9 +126,9 @@ Widget _buildVideoSlide(BuildContext context) {
               child: Align(
                 alignment: FractionalOffset(1, 0.75),
                 child: SizedBox(
-                  width: 450,
-                  height: 410,
-                  child: Image.asset('assets/slides/video.png'),
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/gbrainy.png'),
                 ),
               ),
             ),
@@ -120,15 +139,17 @@ Widget _buildVideoSlide(BuildContext context) {
   );
 }
 
-Widget _buildGraphicsSlide(BuildContext context) {
+Widget _buildKdeeduSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
+      Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(context.l10n.kdeeduSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -137,7 +158,7 @@ Widget _buildGraphicsSlide(BuildContext context) {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  context.l10n.graphicsSlideBody,
+                  context.l10n.kdeeduSlideBody,
                   style: bodyStyle,
                 ),
               ),
@@ -146,9 +167,9 @@ Widget _buildGraphicsSlide(BuildContext context) {
               child: Align(
                 alignment: FractionalOffset(1, 0.75),
                 child: SizedBox(
-                  width: 450,
-                  height: 410,
-                  child: Image.asset('assets/slides/graphics.png'),
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/kdeedu.png'),
                 ),
               ),
             ),
@@ -159,15 +180,17 @@ Widget _buildGraphicsSlide(BuildContext context) {
   );
 }
 
-Widget _buildPhotographySlide(BuildContext context) {
+Widget _buildTux4kidsSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
+      Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(context.l10n.tux4kidsSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -176,7 +199,7 @@ Widget _buildPhotographySlide(BuildContext context) {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  context.l10n.photographySlideBody,
+                  context.l10n.tux4kidsSlideBody,
                   style: bodyStyle,
                 ),
               ),
@@ -185,9 +208,337 @@ Widget _buildPhotographySlide(BuildContext context) {
               child: Align(
                 alignment: FractionalOffset(1, 0.75),
                 child: SizedBox(
-                  width: 450,
-                  height: 410,
-                  child: Image.asset('assets/slides/photography.png'),
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/tux4kids.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildBijibenSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(context.l10n.bijibenSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.bijibenSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/bijiben.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildFontsSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(context.l10n.fontsSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.fontsSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/fonts.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildAdminSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(context.l10n.adminSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.adminSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/menueditor.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildLibrecadSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.librecadSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.librecadSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/librecad.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildCalibreSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.calibreSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.calibreSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/calibre.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildCalcSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.calcSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.calcSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/gcalctool.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildDesksoftSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.desksoftSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.desksoftSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/desktopsoftware.png'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildAccessSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.accessSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.accessSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/accessibility.png'),
                 ),
               ),
             ),
@@ -201,13 +552,15 @@ Widget _buildPhotographySlide(BuildContext context) {
 Widget _buildSoftwareSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
+      Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
+            Text(context.l10n.softwareSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -224,9 +577,9 @@ Widget _buildSoftwareSlide(BuildContext context) {
               child: Align(
                 alignment: FractionalOffset(1, 0.75),
                 child: SizedBox(
-                  width: 450,
-                  height: 410,
-                  child: Image.asset('assets/slides/software.png'),
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/softwarecenter.png'),
                 ),
               ),
             ),
@@ -240,20 +593,41 @@ Widget _buildSoftwareSlide(BuildContext context) {
 Widget _buildGetHelpSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/us_background.png'),
-      Center(
-        child: Html(
-          shrinkWrap: true,
-          data: context.l10n.gethelpSlideBody,
-          style: {
-            'body': Style(
-              color: Colors.white,
-              fontSize: FontSize(24),
+      Image.asset('assets/slides/ed_background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+            Text(context.l10n.gethelpSlideTitle, style: headerStyle),
+            const SizedBox(height: 20),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  context.l10n.gethelpSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
             ),
-          },
-          onAnchorTap: (url, _, __) => launchUrlString(url!),
+            Expanded(
+              child: Align(
+                alignment: FractionalOffset(1, 0.75),
+                child: SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Image.asset('assets/slides/edubuntu-logo.png'),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     ],
   );
 }
+
