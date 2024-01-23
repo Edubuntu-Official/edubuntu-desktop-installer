@@ -37,7 +37,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
         ),
         child: Html(
           shrinkWrap: true,
-          data: context.l10n.welcomeSlideTitle,
+          data: context.l10n.welcomeSlideHeader,
           style: {
             'body': Style(
               color: Colors.white,
