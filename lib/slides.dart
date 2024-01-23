@@ -44,8 +44,10 @@ Widget _buildWelcomeSlide(BuildContext context) {
                 color: Colors.white,
                 fontSize: FontSize(24),
               ),
+            },
           ),
         ],
+      ),
       Expanded(
         child: Text(
           context.l10n.welcomeSlideBody,
