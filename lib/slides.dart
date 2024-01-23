@@ -30,24 +30,24 @@ Widget _buildWelcomeSlide(BuildContext context) {
     children: [
       Image.asset('assets/slides/ed_background.png'),
       Center(
-        child: SizedBox(
-          width: 640,
-          height: 175,
-          child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-        ),
-        child: Html(
-          shrinkWrap: true,
-          data: context.l10n.welcomeSlideHeader,
-          style: {
-            'body': Style(
-              color: Colors.white,
-              fontSize: FontSize(24),
-            ),
-          },
-        ),
-      ),
-      Left(
-        child: (
+        children: [
+          SizedBox(
+            width: 640,
+            height: 175,
+            child: Image.asset('assets/slides/edubuntu-new-logo.png'),
+          ),
+          Html(
+            shrinkWrap: true,
+            data: context.l10n.welcomeSlideHeader,
+            style: {
+              'body': Style(
+                color: Colors.white,
+                fontSize: FontSize(24),
+              ),
+          ),
+        ],
+      Expanded(
+        child: Text(
           context.l10n.welcomeSlideBody,
           style: bodyStyle,
         ),
@@ -66,7 +66,6 @@ Widget _buildCustomizeSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.customizeSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -98,7 +97,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
 }
 
 
-Widget _buildGbranySlide(BuildContext context) {
+Widget _buildGbrainySlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
@@ -108,7 +107,6 @@ Widget _buildGbranySlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.gbrainySlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -149,7 +147,6 @@ Widget _buildKdeeduSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.kdeeduSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -272,7 +269,6 @@ Widget _buildFontsSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.fontsSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -313,7 +309,6 @@ Widget _buildAdminSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.adminSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -353,9 +348,8 @@ Widget _buildLibrecadSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.librecadSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
+            Expanded (
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -396,7 +390,6 @@ Widget _buildCalibreSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.calibreSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -478,7 +471,6 @@ Widget _buildDesksoftSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.desksoftSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -560,7 +552,6 @@ Widget _buildSoftwareSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.softwareSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -601,7 +592,6 @@ Widget _buildGetHelpSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.gethelpSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
