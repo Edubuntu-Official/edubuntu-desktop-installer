@@ -228,7 +228,6 @@ Widget _buildBijibenSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.bijibenSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
@@ -430,7 +429,6 @@ Widget _buildCalcSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.calcSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -511,7 +509,6 @@ Widget _buildAccessSlide(BuildContext context) {
           children: [
             Expanded(
             Text(context.l10n.accessSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
