@@ -76,11 +76,13 @@ Widget _buildCustomizeSlide(BuildContext context) {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              context.l10n.customizeSlideTitle,
-              style: headerStyle
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.customizeSlideTitle,
+                style: headerStyle
+              ),
             ),
-            Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
@@ -98,7 +100,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
                 ),
                 Expanded(
                   child: Align(
-                    alignment: FractionalOffset(1,0.75),
+                    alignment: FractionalOffset(0.5,0.75),
                     child: SizedBox(
                       width: 160,
                       height: 160,
