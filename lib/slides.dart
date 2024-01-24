@@ -99,9 +99,9 @@ Widget _buildCustomizeSlide(BuildContext context) {
                     ),
                   ),
                 ),
-                Expanded(
+                Flexible(
                   child: Align(
-                    alignment: FractionalOffset(0.5,0.75),
+                    alignment: FractionalOffset(0.6,0.75),
                     child: SizedBox(
                       width: 160,
                       height: 160,
