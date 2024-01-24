@@ -29,24 +29,22 @@ Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
+      SizedBox(
+        width: 640,
+        height: 175,
+        child: Image.asset('assets/slides/edubuntu-new-logo.png'),
+      ),
       Center(
-        children: [
-          SizedBox(
-            width: 640,
-            height: 175,
-            child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-          ),
-          Html(
-            shrinkWrap: true,
-            data: context.l10n.welcomeSlideHeader,
-            style: {
-              'body': Style(
-                color: Colors.white,
-                fontSize: FontSize(24),
-              ),
-            },
-          ),
-        ],
+        child: Html(
+          shrinkWrap: true,
+          data: context.l10n.welcomeSlideHeader,
+          style: {
+            'body': Style(
+              color: Colors.white,
+              fontSize: FontSize(24),
+            ),
+          },
+        ),
       ),
       Expanded(
         child: Text(
