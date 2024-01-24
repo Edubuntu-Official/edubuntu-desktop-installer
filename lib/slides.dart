@@ -29,31 +29,38 @@ Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
-      SizedBox(
-        width: 640,
-        height: 175,
-        child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-      ),
-      Center(
-        child: Html(
-          shrinkWrap: true,
-          data: context.l10n.welcomeSlideHeader,
-          style: {
-            'body': Style(
-              color: Colors.white,
-              fontSize: FontSize(24),
+      Padding(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start
+          children: [
+            SizedBox(
+              width: 640,
+              height: 175,
+              child: Image.asset('assets/slides/edubuntu-new-logo.png'),
             ),
-          },
-        ),
-      ),
-      Expanded(
-        child: Text(
-          context.l10n.welcomeSlideBody,
-          style: bodyStyle,
+            Center(
+              child: Html(
+              shrinkWrap: true,
+              data: context.l10n.welcomeSlideHeader,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(24),
+                  ),
+                },
+              ),
+            ),
+            Expanded(
+              child: Text(
+                context.l10n.welcomeSlideBody,
+                style: bodyStyle,
+              ),
+            ),
+          ],
         ),
       ),
     ],
-  );
+  )
 }
 
 Widget _buildCustomizeSlide(BuildContext context) {
@@ -62,7 +69,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(context.l10n.customizeSlideTitle, style: headerStyle),
