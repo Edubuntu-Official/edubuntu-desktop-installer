@@ -72,35 +72,45 @@ Widget _buildCustomizeSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(context.l10n.customizeSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.customizeSlideBody,
-                  style: bodyStyle,
-                ),
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                context.l10n.customizeSlideTitle,
+                style: headerStyle
               ),
-            ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/edubuntu-installer.png'),
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        context.l10n.customizeSlideBody,
+                        style: bodyStyle,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: FractionalOffset(1,0.75),
+                      child: SizedBox(
+                        width: 160,
+                        height: 160,
+                        child: Image.asset('assets/slides/edubuntu-installer.png'),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     ],
   );
