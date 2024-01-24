@@ -51,7 +51,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
                      ),
                   },
                 ),
-              ]
+              ],
             ),
             Expanded(
               child: Text(
