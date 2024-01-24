@@ -34,24 +34,25 @@ Widget _buildWelcomeSlide(BuildContext context) {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Container(
+              alignment: Alignment.topCenter,
+              child: SizedBox(
+                width: 640,
+                height: 175,
+                child: Image.asset('assets/slides/edubuntu-new-logo.png'),
+              ),
+            ),
             Center(
-              children: [
-                SizedBox(
-                  width: 640,
-                  height: 175,
-                  child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-                ),
-                Html(
-                  shrinkWrap: true,
-                  data: context.l10n.welcomeSlideHeader,
-                  style: {
-                     'body': Style(
-                       color: Colors.white,
-                        fontSize: FontSize(24),
-                     ),
-                  },
-                ),
-              ],
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.welcomeSlideHeader,
+                style: {
+                  'body': Style(
+                     color: Colors.white,
+                     fontSize: FontSize(24),
+                  ),
+                },
+              ),
             ),
             Expanded(
               child: Text(
