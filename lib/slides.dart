@@ -29,28 +29,41 @@ Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
-      SizedBox(
-        width: 640,
-        height: 175,
-        child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-      ),
-      Center(
-        child: Html(
-          shrinkWrap: true,
-          data: context.l10n.welcomeSlideHeader,
-          style: {
-            'body': Style(
-              color: Colors.white,
-              fontSize: FontSize(24),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        children: [
+          Row (
+            crossAxisAlignment: CrossAxisAlignment.start,
+            SizedBox(
+              width: 640,
+              height: 175,
+              child: Image.asset('assets/slides/edubuntu-new-logo.png'),
             ),
-          },
-        ),
-      ),
-      Expanded(
-        child: Text(
-          context.l10n.welcomeSlideBody,
-          style: bodyStyle,
-        ),
+          ),
+          Row (
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Html(
+                  shrinkWrap: false,
+                  data: context.l10n.welcomeSlideHeader,
+                  style: {
+                    'body': Style(
+                      color: Colors.white,
+                      fontSize: FontSize(24),
+                    ),
+                  },
+                ),
+              ),
+              Expanded(
+                child: Text(
+                  context.l10n.welcomeSlideBody,
+                  style: bodyStyle,
+                ),
+              ),
+            ]
+          ),
+        ],
       ),
     ],
   );
@@ -65,29 +78,38 @@ Widget _buildCustomizeSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.customizeSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
+            Row(
+              child: Text(
+                  context.l10n.customizeSlideTitle,
+                  style: headerStyle
                 ),
-                child: Text(
-                  context.l10n.customizeSlideBody,
-                  style: bodyStyle,
-                ),
-              ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/edubuntu-installer.png'),
+            Row(
+              children: [ 
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.customizeSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Expanded(
+                  child: Align(
+                    alignment: FractionalOffset(1, 0.75),
+                    child: SizedBox(
+                      width: 160,
+                      height: 160,
+                      child: Image.asset('assets/slides/edubuntu-installer.png'),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
