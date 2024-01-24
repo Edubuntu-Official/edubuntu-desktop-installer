@@ -60,8 +60,8 @@ Widget _buildWelcomeSlide(BuildContext context) {
         ),
       ),
     ],
-  )
-}
+  ),
+};
 
 Widget _buildCustomizeSlide(BuildContext context) {
   return Stack(
