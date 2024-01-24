@@ -30,26 +30,28 @@ Widget _buildWelcomeSlide(BuildContext context) {
     children: [
       Image.asset('assets/slides/ed_background.png'),
       Padding(
-        padding: const EdgeInsets.all(60),
+        padding: const EdgeInsets.all(50),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
-              width: 640,
-              height: 175,
-              child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-            ),
             Center(
-              child: Html(
-              shrinkWrap: true,
-              data: context.l10n.welcomeSlideHeader,
-                style: {
-                  'body': Style(
-                    color: Colors.white,
-                    fontSize: FontSize(24),
-                  ),
-                },
-              ),
+              children: [
+                SizedBox(
+                  width: 640,
+                  height: 175,
+                  child: Image.asset('assets/slides/edubuntu-new-logo.png'),
+                ),
+                Html(
+                  shrinkWrap: true,
+                  data: context.l10n.welcomeSlideHeader,
+                  style: {
+                     'body': Style(
+                       color: Colors.white,
+                        fontSize: FontSize(24),
+                     ),
+                  },
+                ),
+              ]
             ),
             Expanded(
               child: Text(
