@@ -83,6 +83,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
                 style: headerStyle
               ),
             ),
+            Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
