@@ -79,12 +79,10 @@ Widget _buildCustomizeSlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
-              child: Expanded(
-                child: Text(
+              child: Text(
                   context.l10n.customizeSlideTitle,
                   style: headerStyle
                 ),
-              ),
             ),
             Row(
               children: [ 
