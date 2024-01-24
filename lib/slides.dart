@@ -30,7 +30,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
     children: [
       Image.asset('assets/slides/ed_background.png'),
       Padding(
-        padding: const EdgeInsets.all(50),
+        padding: const EdgeInsets.all(60),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
