@@ -387,8 +387,8 @@ Widget _buildCalibreSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.calibreSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -427,8 +427,8 @@ Widget _buildCalcSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.calcSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -467,8 +467,8 @@ Widget _buildDesksoftSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.desksoftSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -507,8 +507,8 @@ Widget _buildAccessSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.accessSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -547,8 +547,8 @@ Widget _buildSoftwareSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.softwareSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -587,8 +587,8 @@ Widget _buildGetHelpSlide(BuildContext context) {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
             Text(context.l10n.gethelpSlideTitle, style: headerStyle),
+            Expanded(
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
