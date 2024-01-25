@@ -88,7 +88,6 @@ Widget _buildCustomizeSlide(BuildContext context) {
               children: [
                 Expanded(
                   child: Container(
-                    width: 680,
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
@@ -100,14 +99,12 @@ Widget _buildCustomizeSlide(BuildContext context) {
                     ),
                   ),
                 ),
-                Flexible(
-                  child: Align(
-                    alignment: FractionalOffset(0.6,0.75),
-                    child: SizedBox(
-                      width: 160,
-                      height: 160,
-                      child: Image.asset('assets/slides/edubuntu-installer.png'),
-                    ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/edubuntu-installer.png'),
                   ),
                 ),
               ],
