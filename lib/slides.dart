@@ -123,32 +123,41 @@ Widget _buildGbrainySlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.gbrainySlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.gbrainySlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.gbrainySlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/gbrainy.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.gbrainySlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/gbrainy.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -163,32 +172,41 @@ Widget _buildKdeeduSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.kdeeduSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.kdeeduSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.kdeeduSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/kdeedu.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.kdeeduSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/kdeedu.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -203,33 +221,41 @@ Widget _buildTux4kidsSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.tux4kidsSlideTitle, style: headerStyle),
-            const SizedBox(height: 20),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.tux4kidsSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.tux4kidsSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/tux4kids.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.tux4kidsSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/tux4kids.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -244,32 +270,41 @@ Widget _buildBijibenSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.bijibenSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.bijibenSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.bijibenSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/bijiben.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.bijibenSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/bijiben.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -284,32 +319,41 @@ Widget _buildFontsSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.fontsSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.fontsSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.fontsSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/fonts.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.fontsSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/fonts.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -324,32 +368,41 @@ Widget _buildAdminSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.adminSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.adminSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.adminSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/menueditor.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.adminSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/menueditor.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -364,32 +417,41 @@ Widget _buildLibrecadSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.librecadSlideTitle, style: headerStyle),
-            Expanded (
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.librecadSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.librecadSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/librecad.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.librecadSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/librecad.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -404,32 +466,41 @@ Widget _buildCalibreSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.calibreSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.calibreSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.calibreSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/calibre.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.calibreSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/calibre.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -444,32 +515,41 @@ Widget _buildCalcSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.calcSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.calcSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.calcSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/gcalctool.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.calcSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/gcalctool.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -477,39 +557,47 @@ Widget _buildCalcSlide(BuildContext context) {
     ],
   );
 }
-
 Widget _buildDesksoftSlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.desksoftSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.desksoftSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.desksoftSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/desktopsoftware.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.desksoftSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/desktopsoftware.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -517,39 +605,47 @@ Widget _buildDesksoftSlide(BuildContext context) {
     ],
   );
 }
-
 Widget _buildAccessSlide(BuildContext context) {
   return Stack(
     children: [
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.accessSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.accessSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.accessSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/accessibility.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.accessSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/accessibility.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -564,32 +660,41 @@ Widget _buildSoftwareSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.softwareSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.softwareSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.softwareSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/softwarecenter.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.softwareSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/softwarecenter.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -604,32 +709,41 @@ Widget _buildGetHelpSlide(BuildContext context) {
       Image.asset('assets/slides/ed_background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Row(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(context.l10n.gethelpSlideTitle, style: headerStyle),
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.gethelpSlideBody,
-                  style: bodyStyle,
-                ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.gethelpSlideTitle,
+                style: headerStyle
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 160,
-                  height: 160,
-                  child: Image.asset('assets/slides/edubuntu-logo.png'),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      context.l10n.gethelpSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 160,
+                    height: 160,
+                    child: Image.asset('assets/slides/edubuntu-logo.png'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -637,4 +751,3 @@ Widget _buildGetHelpSlide(BuildContext context) {
     ],
   );
 }
-
