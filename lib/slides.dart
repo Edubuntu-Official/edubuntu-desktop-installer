@@ -88,6 +88,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
               children: [
                 Expanded(
                   child: Container(
+                    width: 280,
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
