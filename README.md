@@ -1,3 +1,5 @@
+This project is archived as it represents the framework of the Edubuntu Desktop Installer under the old Ubuntu Flavor Installer framework prior to Ubuntu Desktop Provision and is no longer in use or developed.
+
 # Edubuntu Desktop Installer
 
 Created from [Ubuntu Flavor Installer](https://github.com/canonical/ubuntu-flavor-installer)
